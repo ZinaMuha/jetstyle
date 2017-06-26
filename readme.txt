@@ -1,10 +1,5 @@
-node 7.4.0
+Версия node - 6.10.3
+Запуск проекта осуществляется командой gulp в корне
+
 gulp 3.9.1
 bower 1.8.0
-
-.gitignore
-
-node_modules
-bower_components
-build
-.idea
