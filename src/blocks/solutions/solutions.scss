@@ -1,0 +1,88 @@
+.solutions {
+	background: #89c9f5;
+	background: linear-gradient(to bottom, #89c9f5 0%, #7bc3e8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c9f5', endColorstr='#7bc3e8', GradientType=0 );
+	padding: 90px 0 120px 0;
+	.button_red {
+		margin-top: 35px;
+	}
+	.button_dotted {
+		margin-top: 17px;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	h2 {
+		color: white;
+		text-align: center;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 50px;
+	}
+	&__item {
+		width: 370px;
+		text-align: center;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		&::before {
+			content: '';
+			position: absolute;
+			width: 355px;
+			height: 12px;
+			background-color: rgba(255, 255, 255, 0.83);
+			bottom: -12px;
+			transform: translate(-50%, 0);
+		}
+		&_large {
+			&::after {
+				content: '';
+				position: absolute;
+				width: 327px;
+				height: 24px;
+				background-color: rgba(255, 255, 255, 0.55);
+				bottom: -24px;
+				transform: translate(-50%, 0);
+			}
+		}
+		&_small {
+			margin-top: 90px;
+			.solutions__item-content {
+				height: 400px;
+			}
+		}
+		&-title {
+			padding:36px 0;
+			color: white;
+			text-transform: uppercase;
+			&_light-blue {
+				background-color: $bright-blue;
+			}
+			&_blue {
+				background-color: $deep-blue;
+			}
+		}
+		&-content {
+			padding: 25px 40px 45px 40px;
+			background-color: white;
+			box-sizing: border-box;
+		}
+	}
+	&__list {
+		&-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 0;
+			border-bottom: 1px solid #d6dce1;
+			font-size: 16px;
+			text-align: left;
+			color: #5d5d5d;
+			div:nth-child(2) {
+				background: url(../../img/solutions-list-img.png);
+				width: 29px;
+				height: 30px;
+				flex-shrink: 0;
+			}
+		}
+	}
+}

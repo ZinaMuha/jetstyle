@@ -1,0 +1,24 @@
+.main-block {
+	background: #ebf4f9;
+	background: linear-gradient(9deg, #ebf4f9 0%, #ebf4f9 56%, #f2f7fb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf4f9', endColorstr='#f2f7fb', GradientType=1 );
+
+	&__item {
+		width: 425px;
+	}
+
+	&__text {
+		font-size: 18px;
+		font-weight: 300;
+	    line-height: 25px;
+	    letter-spacing: .7px;
+	    margin-top: 35px;
+	    span {
+	    	color: #66aae5;
+	    	font-weight: 500;
+	    }
+	}
+	.button {
+		margin-top: 50px;
+	}
+}

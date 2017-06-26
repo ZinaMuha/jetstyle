@@ -1,0 +1,32 @@
+.header {
+	padding: 23px 0 27px 0;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__cities {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 75px;
+		&-item {
+			min-width: 140px;
+			margin-right: 70px;
+			&:last-child {
+				margin-right: 0px;
+			}
+			&-name {
+				font-size: 12px;
+			}
+			&-telephone {
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+	}
+}

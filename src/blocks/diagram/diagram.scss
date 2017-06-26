@@ -1,0 +1,49 @@
+@mixin circle($size) {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - #{$size/2});
+  top: calc(50% - #{$size/2});
+  width: $size;
+  height: $size;
+  padding: 0;
+  margin: 0;
+}
+
+$wheel: 25em;
+.wheel, .umbrella, .color {
+  @include circle($wheel);
+}
+
+.wheel {
+  overflow: hidden;
+  width: $wheel;
+  height: $wheel;
+  transform: rotate(-30deg);
+}
+
+.umbrella {
+  position: relative;
+  -webkit-filter: blur(1em);
+  -webkit-transform: scale(1.35);
+}
+.color, .color:nth-child(n+4):after {
+  clip: rect(0, $wheel, $wheel, #{$wheel/2});
+}
+.color:after, .color:nth-child(n+4) {
+  @include circle($wheel);
+  clip: rect(0, #{$wheel/2}, $wheel, 0);
+}
+
+$colors: (#33d2d4, #69dee8, #edbf56, #d9626f, #995bee, #6aa6e4);
+@for $i from 0 to length($colors) {
+  .color:nth-child(#{1+$i}):after {
+    background-color: nth($colors, $i+1);
+    @if $i < 3 {
+      transform: rotate(#{60*(1+$i)}deg);
+      z-index: #{length($colors)-$i};
+    } @else {
+      transform: rotate(#{-60+(60*(1+$i))}deg);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.menu {
+	background-color: $fade-blue;
+	padding: 5px 0;
+	color: white;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__card {
+		div:nth-child(1) {
+			font-size: 14px;
+			font-weight: 700;
+			text-align: center;
+			line-height: 0.5;
+		}
+		div:nth-child(2) {
+			background: url(../../img/card.png);
+			width: 26px;
+			height: 21px;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.button {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	min-height: 40px;
+	box-sizing: border-box;
+	padding: 13px 20px;
+	border-radius: 20px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	&:hover {
+		transition: all 0.2s ease-out;
+	}
+	&_dotted {
+		padding: 0;
+		min-height: auto;
+		border-radius: 0;
+		line-height: 1.4;
+		border-bottom: 1px dotted $font-grey;
+		display: inline-block;
+	}
+	&_white {
+		border: 2px solid white;
+		&:hover {
+			background-color: white;
+			color: $font-grey;
+		}
+	}
+	&_red {
+		background-color: $red;
+		color: white;
+		min-width: 170px;
+		border: 2px solid $red;
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
+	&_small-letters {
+		text-transform: none;
+	}
+}

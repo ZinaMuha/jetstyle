@@ -1,0 +1,55 @@
+.advantages {
+	padding: 90px 0 95px 0;
+	h2 {
+		text-align: center;
+	}
+	&__items {
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__item {
+		display: flex;
+		padding: 0 67px;
+		border-right: 1px solid #d6dce1;
+		max-width: 220px;
+		flex-shrink: 0;
+		color: rgba(38, 38, 38, 0.9);
+		&:last-child {
+			padding-right: 0;
+			border-right: none;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+		&-text {
+			font-size: 16px;
+			display: inline-block;
+		}
+		&-img {
+			margin-right: 15px;
+			flex-shrink: 0;
+			&.img1 {
+				background: url(../../img/advantages-img1.png);
+				width: 31px;
+				height: 32px;
+			}
+			&.img2 {
+				background: url(../../img/advantages-img2.png);
+				width: 26px;
+				height: 32px;
+			}
+			&.img3 {
+				background: url(../../img/advantages-img3.png);
+				width: 32px;
+				height: 32px;
+			}
+			&.img4 {
+				background: url(../../img/advantages-img4.png);
+				width: 33px;
+				height: 31px
+			}
+		}
+	}
+}

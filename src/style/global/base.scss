@@ -1,0 +1,58 @@
+* {
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+body {
+  font-family: 'ubuntu';
+	width: 1230px;
+	min-width: 100%;
+  color: $font-grey;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+  width: 1230px;
+  margin: auto;
+  position: relative;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1230px;
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+label.error {
+  display: none !important;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+h1, h2 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 1.4;
+  letter-spacing: 1.3px;
+}
+
+h2 {
+  font-size: 32px;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  color: #4a4a4a;
+}

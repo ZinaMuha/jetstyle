@@ -1,0 +1,18 @@
+@import "../../bower_components/normalize.css/normalize.css";
+@import "../../bower_components/OwlCarousel/owl-carousel/owl.carousel.css";
+
+@import './global/fonts.scss';
+@import './global/variables.scss';
+@import './global/base.scss';
+
+@import '../blocks/header/header.scss';
+@import '../blocks/logotype/logotype.scss';
+@import '../blocks/button/button.scss';
+@import '../blocks/search-btn/search-btn.scss';
+@import '../blocks/menu/menu.scss';
+@import '../blocks/main-block/main-block.scss';
+@import '../blocks/advantages/advantages.scss';
+@import '../blocks/solutions/solutions.scss';
+@import '../blocks/select-form/select-form.scss';
+@import '../blocks/selector/selector.scss';
+@import '../blocks/diagram/diagram.scss';
