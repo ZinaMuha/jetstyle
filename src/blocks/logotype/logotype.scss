@@ -1,5 +1,29 @@
 .logotype {
-	background: url(../../img/logotype.jpg);
+	background: url(../../img/logotype.png);
 	width: 50px;
 	height: 50px;
+	background-size: contain;
+}
+
+@media (max-width: 1024px) {
+	.logotype {
+		width: 40px;
+		height: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.logotype {
+		width: 60px;
+		height: 60px;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.logotype {
+		width: 40px;
+		height: 40px;
+	}
 }

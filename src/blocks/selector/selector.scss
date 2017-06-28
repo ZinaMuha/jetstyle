@@ -50,3 +50,26 @@ $arrowWidth: 40px;
 		}
 	}
 }
+
+@media (max-width: 605px) {
+	.selector {
+		width: 100%!important;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+	.selector {
+		margin-top: 55px;
+		height: 85px;
+		&__arrow {
+			background-color: transparent;
+			width: 60px;
+			&:after {
+				border-width: 14px 9px 0 9px;
+			}
+		}
+		select {
+			font-size: 28px;
+		}
+	}
+}

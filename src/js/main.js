@@ -4,6 +4,8 @@ $(document).ready(function() {
 		loop:true,
 	    nav:true,
 	    items:1,
-	    dots: true
+	    dots: true,
+	    navText: [],
 	});
+
 });

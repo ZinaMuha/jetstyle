@@ -1,0 +1,18 @@
+.burger {
+	div {
+		width: 40px;
+		height: 4px;
+		background-color: #8baad1;
+		margin-top: 12px;
+	}
+	div:nth-child(1) {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.burger div {
+		width: 30px;
+		margin-top: 8px;
+	}
+}

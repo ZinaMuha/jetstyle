@@ -8,10 +8,28 @@
     <meta name="keywords" content="автоматизация автобизнеса, оптимизация автобизнес, автомобильный бизнес">
     <meta name="author" content="JetStyle">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="/css/main.css">
 	
-	<script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/vendor/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
 </head>
 <body>
@@ -20,6 +38,11 @@
 	<div class="header">
 		<div class="container">
 			<div class="header__items">
+				<div class="burger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
 				<div class="logotype"></div>
 				<div class="header__info">
 					<div class="header__cities">
@@ -38,6 +61,10 @@
 					</div>
 					<a class="button button_dotted" href="#">Продлить лицензию</a>
 					<div class="search-btn"></div>
+				</div>
+				<div class="card card_blue">
+					<div>4</div>
+					<div></div>
 				</div>
 			</div>
 		</div>
@@ -65,7 +92,7 @@
 					о компании
 				</a>
 				<a class="button button_white" href="#">скачать демоверсию</a>
-				<div class="menu__card">
+				<div class="card">
 					<div>4</div>
 					<div></div>
 				</div>
@@ -75,25 +102,39 @@
 
 	<div class="main-block">
 		<div class="container">
-			<div class="main-block__item">
-				<h1>Система «Jetstyle»</h1>
-				<div class="main-block__text">
-					Предназначена для автоматизации вашего 
-					автобизнеса. Это гибкая программа, состоит 
-					из <span>6 модулей</span>, каждый из которых вы можете 
-					приобрести по отдельности.
+			<div class="owl-carousel">
+				<div class="main-block__item">
+					<div class="main-block__content">
+						<h1>Система «Jetstyle»</h1>
+						<div class="diagram diagram_mob">
+							<img src="img/diagram-mob.png" alt="">
+						</div>
+						<div class="main-block__text">
+							Предназначена для автоматизации вашего 
+							автобизнеса. Это гибкая программа, состоит 
+							из <span>6 модулей</span>, каждый из которых вы можете 
+							приобрести по отдельности.
+						</div>
+						<a class="button button_red" href="#">подробнее</a>
+					</div>
+					<div class="diagram diagram_full-size"></div>
 				</div>
-				<a class="button button_red" href="#">подробнее</a>
-			</div>
-			<div class="wheel">
-				<ul class="umbrella">
-				    <li class="color"></li>
-				    <li class="color"></li>
-				    <li class="color"></li>
-				    <li class="color"></li>
-				    <li class="color"></li>
-				    <li class="color"></li>
-				  </ul>
+				<div class="main-block__item">
+					<div class="main-block__content">
+						<h1>Система «Jetstyle»</h1>
+						<div class="diagram diagram_mob">
+							<img src="img/diagram-mob.png" alt="">
+						</div>
+						<div class="main-block__text">
+							Предназначена для автоматизации вашего 
+							автобизнеса. Это гибкая программа, состоит 
+							из <span>6 модулей</span>, каждый из которых вы можете 
+							приобрести по отдельности.
+						</div>
+						<a class="button button_red" href="#">подробнее</a>
+					</div>
+					<div class="diagram diagram_full-size"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -134,7 +175,7 @@
 		</div>
 	</div>
 
-	<div class="solutions">
+	<div class="solutions" id="m-solutions">
 		<div class="container">
 			<h2>
 				Мы разработали готовые решения <br>
@@ -154,7 +195,7 @@
 								<div></div>
 							</div>
 							<div class="solutions__list-item">						
-								<div class="solutions__item-list-text">
+								<div class="solutions__list-item-text">
 									Каталог запчастей
 								</div>
 								<div></div>
@@ -177,7 +218,7 @@
 								<div></div>
 							</div>
 							<div class="solutions__list-item">						
-								<div class="solutions__item-list-text">
+								<div class="solutions__list-item-text">
 									Учет работ на СТО
 								</div>
 								<div></div>
@@ -189,13 +230,13 @@
 								<div></div>
 							</div>
 							<div class="solutions__list-item">						
-								<div class="solutions__item-list-text">
+								<div class="solutions__list-item-text">
 									Расчет стоимости ремонта
 								</div>
 								<div></div>
 							</div>
 							<div class="solutions__list-item">						
-								<div class="solutions__item-list-text">
+								<div class="solutions__list-item-text">
 									Каталог запчастей
 								</div>
 								<div></div>
@@ -218,7 +259,7 @@
 								<div></div>
 							</div>
 							<div class="solutions__list-item">						
-								<div class="solutions__item-list-text">
+								<div class="solutions__list-item-text">
 									16000 моделей <br>
 									от 93 производителей
 								</div>

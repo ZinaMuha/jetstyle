@@ -10,22 +10,20 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	&__card {
-		div:nth-child(1) {
-			font-size: 14px;
-			font-weight: 700;
-			text-align: center;
-			line-height: 0.5;
-		}
-		div:nth-child(2) {
-			background: url(../../img/card.png);
-			width: 26px;
-			height: 21px;
+}
+
+@media (max-width: 1024px) {
+	.menu {
+		font-size: 10px;
+		.button {
+			font-size: 10px;
+			padding: 10px 6px;	
+			min-height: 35px;		
 		}
 	}
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
 	.menu {
 		display: none;
 	}

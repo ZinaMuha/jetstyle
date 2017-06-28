@@ -1,0 +1,38 @@
+.card {
+	div:nth-child(1) {
+		font-size: 14px;
+		font-weight: 700;
+		text-align: center;
+		line-height: 0.5;
+		margin-left: 3px;
+	}
+	div:nth-child(2) {
+		background: url(../../img/card.png);
+		width: 26px;
+		height: 21px;
+	}
+	&_blue {
+		div:nth-child(1) {
+			font-size: 24px;
+			color: #8baad1;
+		}
+		div:nth-child(2) {
+			background: url(../../img/card-blue.png);
+			width: 48px;
+			height: 37px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.card_blue {
+		div:nth-child(1) {
+			font-size: 18px;
+		}
+		div:nth-child(2) {
+			background-size: cover;
+			width: 36px;
+			height: 27px;
+		}
+ 	}
+}

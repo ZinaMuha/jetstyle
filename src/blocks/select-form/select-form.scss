@@ -23,3 +23,30 @@
 		justify-content: space-between;
 	}
 }
+
+@media (max-width: 850px) {
+	.select-form {
+		&__text {
+			br {
+				display: none;
+			}
+		}
+		&__form {
+			width: 100%;
+		}
+		&__item {
+			flex-wrap: wrap;
+			.selector {
+				width: 280px;
+			}
+		}
+	}
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+	.select-form {
+		&__text {
+			font-size: 28px;
+		}
+	}
+}

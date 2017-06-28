@@ -24,23 +24,27 @@
 		width: 370px;
 		text-align: center;
 		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		background-color: white;
+		position: relative;
 		&::before {
 			content: '';
 			position: absolute;
-			width: 355px;
+			width: 95%;
 			height: 12px;
 			background-color: rgba(255, 255, 255, 0.83);
 			bottom: -12px;
+			left: 50%;
 			transform: translate(-50%, 0);
 		}
 		&_large {
 			&::after {
 				content: '';
 				position: absolute;
-				width: 327px;
+				width: 90%;
 				height: 24px;
 				background-color: rgba(255, 255, 255, 0.55);
 				bottom: -24px;
+				left: 50%;
 				transform: translate(-50%, 0);
 			}
 		}
@@ -51,9 +55,13 @@
 			}
 		}
 		&-title {
-			padding:36px 0;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
 			color: white;
 			text-transform: uppercase;
+			font-weight: 700;
+			min-height: 90px;
 			&_light-blue {
 				background-color: $bright-blue;
 			}
@@ -63,7 +71,6 @@
 		}
 		&-content {
 			padding: 25px 40px 45px 40px;
-			background-color: white;
 			box-sizing: border-box;
 		}
 	}
@@ -81,8 +88,66 @@
 				background: url(../../img/solutions-list-img.png);
 				width: 29px;
 				height: 30px;
+				background-size: contain;
+    			background-repeat: no-repeat;
 				flex-shrink: 0;
+				margin-left: 10px;
 			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.solutions {
+		&__items {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin-top: 0px;
+		}
+		&__item {
+			margin-top: 50px;
+		}
+	}
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+	.solutions {
+		&__item {
+			width: 470px;
+			&-title {
+				font-size: 24px;
+				min-height: 119px;
+			}
+			&_small {
+				.solutions__item-content {
+					padding: 0px 30px 45px 30px;
+					height: 500px;
+				}
+			}
+			&_large {
+				.solutions__item-content {
+					height: 765px;
+				}
+			}
+		}
+		&__list {
+			&-item {
+				padding: 23px 0;
+				div:nth-child(2) {
+					width: 51px;
+					height: 52px;
+				}
+				&-text {
+					font-size: 24px;
+				}
+			}
+		}
+		.button_red {
+			margin-top: 60px;
+		}
+		.button_dotted {
+			margin-top: 0;
+			font-size: 24px;
 		}
 	}
 }

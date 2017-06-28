@@ -5,7 +5,7 @@
 
 body {
   font-family: 'ubuntu';
-	width: 1230px;
+	max-width: 1230px;
 	min-width: 100%;
   color: $font-grey;
 }
@@ -16,7 +16,7 @@ a {
 }
 
 .container {
-  width: 1230px;
+  max-width: 1230px;
   margin: auto;
   position: relative;
   padding: 0 30px;
@@ -52,7 +52,114 @@ h1 {
 
 h2 {
   font-size: 32px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
   line-height: 1.4;
   color: #4a4a4a;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 767px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.owl-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  .owl-page {
+    display: inline-block;
+
+  /*pagination*/
+    margin-left: 7px;
+    width: 16px;
+    height: 16px;
+    background: #f3f3f3;
+    &.active {
+      background: #d1d1d1;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.owl-buttons {
+  div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translate(0, -50%);
+  display: flex;
+  justify-content: space-between;
+}
+.owl-prev {
+  background: url(../../img/slider-prev.png) center no-repeat;
+  width: 10px;
+  height: 16px;
+  left: -30px;
+  transform: translate(-100%,0);
+  position: absolute;
+}
+.owl-next {
+  background: url(../../img/slider-next.png) center no-repeat;
+  width: 10px;
+  height: 16px;
+  right: -30px;
+  transform: translate(100%,0);
+  position: absolute;
+}
+.owl-dots {
+  width: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 0px;
+}
+.owl-dot {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  border-radius: 7px;
+  background-color: white;
+  &.active {
+    background-color: $slider-points-color;
+  }
+}
+
+@media (max-width: 1024px) {
+  .owl-dots {
+    margin-top: 55px;
+  }
+  .owl-prev {
+    display: none;
+  }
+  .owl-next {
+    display: none;
+  }
 }
